@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+.main-app {
+  background-image: url(./assets/background.svg);
+  background-repeat: no repeat;
+  background-size: cover;
+}
+.title {
+  background: linear-gradient(45deg, #dd4b92, #f9a8d4);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 1000;
+}
+.menu-link {
+  @apply focus:bg-blue-500 focus:text-white font-bold !important;
+}
+input[type='text']:focus ~ .input-text,
+input[type='text']:not(:placeholder-shown) ~ .input-text {
+  @apply font-semibold text-blue-500  transform -translate-y-5 -translate-x-2 scale-75;
+}

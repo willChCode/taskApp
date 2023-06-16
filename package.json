@@ -1,0 +1,22 @@
+{
+  "name": "taskapp",
+  "version": "1.0.0",
+  "description": "¡Bienvenido al repositorio de la aplicación de tareas (Task App)!",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "start": "turbo start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/willChCode/taskApp#readme",
+  "devDependencies": {
+    "turbo": "^1.10.3"
+  }
+}
