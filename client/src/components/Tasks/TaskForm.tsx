@@ -2,6 +2,7 @@ import Input from '../Input';
 import { useState } from 'react';
 import { useMutation } from '@apollo/client';
 import { CREATE_TASK, GET_TASKS } from '../../graphql/tasks';
+import { toast } from 'react-toastify';
 
 export interface InputProps {
   title: string;
@@ -41,6 +42,7 @@ function TaskForm() {
       }
     });
     setInputs(initialValues);
+    toast.success('created task successfully');
   };
 
   // console.log(inputs);

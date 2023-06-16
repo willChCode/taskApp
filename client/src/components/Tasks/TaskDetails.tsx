@@ -6,6 +6,7 @@ import { GET_TASK_ID, UPDATE_TASK } from '../../graphql/tasks';
 import Input from '../Input';
 import { Task } from './LoadTask';
 import { InputProps } from './TaskForm';
+import { toast } from 'react-toastify';
 
 interface TaskDataID {
   taskById: Task;
@@ -64,6 +65,7 @@ function TaskDetails() {
       }
     });
     navigate('/my-task');
+    toast.success('updated task successfully');
   };
 
   return (

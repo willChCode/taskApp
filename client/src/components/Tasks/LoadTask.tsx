@@ -3,6 +3,7 @@ import { DELETE_TASK, GET_TASKS } from '../../graphql/tasks';
 import Card from '../Card';
 import { Link, useNavigate } from 'react-router-dom';
 import Container from '../Container';
+import { toast } from 'react-toastify';
 
 export interface Task {
   _id: string;
@@ -35,6 +36,7 @@ function LoadTask() {
         _id: id
       }
     });
+    toast.success('Task deleted');
   };
 
   function shareOnWhatsApp(message: string) {
