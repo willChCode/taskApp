@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "turbo dev",
     "build": "turbo build",
-    "start": "turbo start"
+    "start": "npm --prefix ./server start"
   },
   "keywords": [],
   "author": "",
